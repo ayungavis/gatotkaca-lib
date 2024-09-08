@@ -1,0 +1,58 @@
+{
+  "name": "#{REPO_NAME}#",
+  "version": "0.0.0",
+  "description": "${DESC}#",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/#{USER_OR_ORG}#/#{REPO_NAME}#.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "author": "u/#{USER_OR_ORG}#",
+  "license": "MIT",
+  "keywords": [],
+  "homepage": "https://github.com/#{USER_OR_ORG}#/#{REPO_NAME}#",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "components": "./dist/components",
+    "utils": "./dist/utils"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/node": "^22.5.1",
+    "@types/react": "^18.3.5",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "bun-types": "latest",
+    "eslint": "^9.9.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jsdom": "^25.0.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.3.0",
+    "vitest": "^2.0.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+
+# Build / outputs
+dist
+
+# ESlint
+.eslintrc.*
+eslint.config.*
+
+# Docs
+docs
+CHANGELOG.md
+
+# Compiler
+.yarn_home
+.bun_home
